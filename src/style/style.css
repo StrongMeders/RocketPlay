@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --radius: 9.6px;
+  --box-msc-color: #2A2141;
+  --font-color1: #E1E1E6;
+  --font-color2: #a5a2b0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #0F0D13;
+}
+
+img {
+  user-select: none;
+  pointer-events: none;
+}
+
+#app {
+  padding: 66px 191px;
+}
+
+
+#items{
+  display: flex;
+  width: auto;
+  height: auto;
+  gap: 2rem;
+}
+
+#right {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#msc_name1, #msc_name2, #msc_name3 {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--font-color1);
+}
+
+#compositor1, #compositor2, #compositor3 {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--font-color2);
+}
+
+#info1, #info2, #info3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#info1 {
+  gap: 0.45rem;
+}
+
+#music1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  padding: 2.4rem;
+  width: 16.6rem;
+  height: 31.15rem;
+  border-radius: var(--radius);
+  background-color: var(--box-msc-color);
+}
+
+#music2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem; 
+  padding: 2rem;
+  width: 22.45rem;
+  height: 16.7rem;
+  border-radius: var(--radius);
+  background-color: var(--box-msc-color);
+}
+
+#music3 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  padding: 2rem;
+  width: 22.45rem;
+  height: 12.45rem;
+  border-radius: var(--radius);
+  background-color: var(--box-msc-color);
+}
+
+#media2, #media3 {
+  display: flex;
+  gap: 1.8rem;
+  align-items: center;
+}
+
+#pause1, #pause2, #pause3 {
+  width: 1.5rem;
+  display: none;
+}
+
+#control1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+#control2, #control3 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#control1 img, #control2 img, #control3 img {
+  user-select: none;
+}
+
+#control1 a, #control2 a, #control3 a {
+  cursor: pointer;
+}
+
+
+#msc_thumb1 {
+  height: 189.66px;
+}
+
+#msc_thumb2, #msc_thumb3{
+  height: 5.25rem;
+  width: 5.25rem;
+}
+#bar1, #bar2 {
+  overflow: hidden;
+  border-radius: 1rem;
+  background-color: #5e586f;
+  width: 100%;
+  height: 0.375rem;
+}
+
+#timeline1, #timeline2 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+#timelapse1, #timelapse2 {
+  height: 100%;
+  width: 85%;
+  border-radius: 1rem;
+  background-color: #D9D9D9;
+}
+
+#time1, #time2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  user-select: none;
+  font-size: 0.9rem;
+  color: var(--font-color2);
+}
